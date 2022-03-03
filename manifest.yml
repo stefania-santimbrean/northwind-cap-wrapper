@@ -1,0 +1,12 @@
+---
+applications:
+  - name: northwindMock-srv
+    path: .
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    services:
+      - northwindMock-dest
+      - northwindMock-uaa
+
+    
